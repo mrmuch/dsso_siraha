@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #f0f0f0;
   --surface-color: #ffffff;
 }
 
@@ -826,8 +826,8 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 800;
   margin-bottom: 15px;
 }
 
@@ -1240,11 +1240,13 @@ section,
   color: var(--accent-color);
   display: block;
   font-size: 28px;
+  text-align: center;
   font-weight: 700;
 }
 
 .why-us .card-item h4 {
-  font-size: 24px;
+  font-size: 16px;
+  text-align: justify;
   font-weight: 600;
   padding: 0;
   margin: 20px 0;

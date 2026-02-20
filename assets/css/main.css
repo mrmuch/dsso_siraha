@@ -1838,3 +1838,11 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+.donor-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;   /* keeps image proportion nicely */
+  border-radius: 50%;  /* makes it round */
+}

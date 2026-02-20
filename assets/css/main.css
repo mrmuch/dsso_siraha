@@ -52,6 +52,42 @@
   --contrast-color: #ffffff;
 }
 
+.core-background {
+  position: relative;
+  color: #ffffff;  /* text color */
+}
+
+.core-background::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../img/bg/core.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;  /* adjust transparency here */
+  z-index: 0;
+}
+
+.core-background > * {
+  position: relative;
+  z-index: 1; /* keep text on top */
+}
+
+
+
+
+/* .core-background {
+background: linear-gradient(360deg, rgba(117, 253, 255, 1), rgba(199, 251, 255, 1), rgba(92, 173, 193, 1));
+-webkit-background: linear-gradient(360deg, rgba(117, 253, 255, 1), rgba(199, 251, 255, 1), rgba(92, 173, 193, 1));
+-moz-background: linear-gradient(360deg, rgba(117, 253, 255, 1), rgba(199, 251, 255, 1), rgba(92, 173, 193, 1));
+
+} */
+
+
+
+
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
